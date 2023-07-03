@@ -1,0 +1,72 @@
+:root {
+    --blue: #1660f3;
+    --light-blue: #9AC9F5ff;
+    --dark-blue: #174db7;
+    --darkest-blue: #0f3070;
+    --orange: #ED6F27;
+    --green: #3F976D;
+    --white: #ffffff;
+
+    --dark-gray: #292929;
+    --mid-gray: #353535;
+    --light-gray: #414141;
+
+    --radius: 3px;
+}
+
+.sobre-nos-container {
+    min-width: 100vw;
+    max-width: 100vw;
+    height: fit-content;
+    background-color: #353535;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sobre-nos {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading-sobre-nos {
+    width: fit-content;
+    padding: 15px 100px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: #174db7;
+    border-radius: 3px;
+}
+
+.texto-sobre-nos {
+    width: 75%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1660f3;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 60px;
+    border-radius: 3px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1450px) {
+    .heading-sobre-nos {
+        padding: 15px 50px;
+        font-size: 32px;
+    }
+
+    .texto-sobre-nos {
+        padding: 15px 20px;
+        font-size: 24px;
+    }
+}

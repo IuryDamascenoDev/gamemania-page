@@ -1,0 +1,129 @@
+:root {
+    --blue: #1660f3;
+    --light-blue: #9AC9F5ff;
+    --dark-blue: #174db7;
+    --darkest-blue: #0f3070;
+    --orange: #ED6F27;
+    --green: #3F976D;
+    --white: #ffffff;
+
+    --dark-gray: #292929;
+    --mid-gray: #353535;
+    --light-gray: #414141;
+
+    --radius: 3px;
+}
+
+.rodape-container {
+    width: 100vw;
+    height: fit-content;
+    background-color: #414141;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-rodape {
+    width: fit-content;
+    margin: 0 0 40px 0;
+    padding: 15px 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: #ED6F27;
+    border-radius: 3px;
+}
+
+.contatos-container {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.link-contato {
+    font-size: 24px;
+    padding: 15px;
+    font-weight: 600;
+    color: #ED6F27;
+}
+
+.link-link-contato {
+    text-decoration: none;
+    color: white;
+}
+
+.link-link-contato:hover {
+    transition: 350ms;
+    color: #292929;
+}
+
+.img-rodape {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.voltar-topo {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ED6F27;
+}
+
+.arrowup {
+    width: 30px;
+    fill-opacity: 0;
+}
+
+/* RESPONSIVIDADE */
+
+/* CONTATO */
+
+@media (max-width: 1450px) {
+    .heading-rodape {
+        padding: 15px 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .heading-rodape {
+        padding: 15px;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    .contatos-container {
+        flex-direction: column;
+    }
+
+    .links-contato {
+        margin-bottom: 40px;
+    }
+
+    .link-contato {
+        font-size: 20px;
+    }
+
+    .img-rodape {
+        width: 300px;
+    }
+
+}

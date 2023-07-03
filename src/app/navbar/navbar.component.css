@@ -1,0 +1,134 @@
+:root {
+    --light-blue: #9AC9F5ff;
+    --blue: #1660f3;
+    --dark-blue: #174db7;
+    --darkest-blue: #0f3070;
+    --orange: #ED6F27;
+    --green: #3F976D;
+    --white: #ffffff;
+
+    --light-gray: #414141;
+    --mid-gray: #353535;
+    --dark-gray: #292929;
+
+    --radius: 3px;
+}
+
+.navbar {
+    height: 80px;
+    min-width: 100vw;
+    max-width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #174db7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 80px;
+    padding: 0 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    margin: 0 10px;
+}
+
+.nav-list {
+    padding: 0 25px;
+}
+
+.nav-item {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active,
+.nav-item:hover {
+    background: #1660f3;
+    transition: 500ms;
+}
+
+.check-btn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 950px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .nav-list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #0f3070;
+        transition: all 500ms;
+    }
+
+    .nav-item {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+        background: none;
+        color: #1660f3;
+    }
+
+    #check:checked~.nav-list {
+        left: 0;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .logo {
+        padding: 0 15px;
+    }
+}
