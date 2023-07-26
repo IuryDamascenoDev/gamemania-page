@@ -57,6 +57,23 @@
     border-radius: 3px;
 }
 
+.link-catalogo {
+    max-width: 80%;
+    text-align: center;
+    margin: 25px 0 0 0;
+    padding: 5px;
+    background-color: #3F976D;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.router-catalogo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .produtos {
     width: 80%;
     margin: 50px 0;

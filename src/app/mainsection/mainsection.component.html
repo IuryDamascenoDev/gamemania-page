@@ -4,39 +4,16 @@
         <h3 class="heading-promocoes">Nossas promoções de hoje</h3>
 
         <div class="produtos">
-            <div class="produto">
-                <img class="imagem-produto" src="../../assets/img/fortnite.jpeg" alt="Produto">
+            <div class="produto" *ngFor="let produto of produtos">
+                <img class="imagem-produto" src="../../assets/img/{{produto.foto}}" alt="Produto">
                 <div class="desc-produto">
-                    <p class="nome-produto">Fortnite</p>
-                    <p class="preco-produto">R$ 99.99</p>
-                    <a href="#" class="comprar-produto">Comprar</a>
-                </div>
-            </div>
-            <div class="produto">
-                <img class="imagem-produto" src="../../assets/img/controller.jpeg" alt="Produto">
-                <div class="desc-produto">
-                    <p class="nome-produto">Controle</p>
-                    <p class="preco-produto">R$ 399.99</p>
-                    <a href="#" class="comprar-produto">Comprar</a>
-                </div>
-            </div>
-            <div class="produto">
-                <img class="imagem-produto" src="../../assets/img/keyboard.jpg" alt="Produto">
-                <div class="desc-produto">
-                    <p class="nome-produto">Teclado</p>
-                    <p class="preco-produto">R$ 199.99</p>
-                    <a href="#" class="comprar-produto">Comprar</a>
-                </div>
-            </div>
-            <div class="produto">
-                <img class="imagem-produto" src="../../assets/img/keyboard.jpg" alt="Produto">
-                <div class="desc-produto">
-                    <p class="nome-produto">Teclado</p>
-                    <p class="preco-produto">R$ 199.99</p>
+                    <p class="nome-produto">{{produto.produto}}</p>
+                    <p class="preco-produto">{{produto.preco}}</p>
                     <a href="#" class="comprar-produto">Comprar</a>
                 </div>
             </div>
         </div>
+        <h3 class="link-catalogo"><a class="router-catalogo" routerLink="/">Catálogo</a></h3>
 
     </div>
 </main>

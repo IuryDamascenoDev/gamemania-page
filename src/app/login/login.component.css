@@ -84,15 +84,23 @@
     height: 32px;
     margin-top: 50px;
     color: white;
+    cursor: pointer;
     background-color: #174db7;
     border: none;
 }
 
-.signup-button {
+.signup {
     width: 100px;
     height: 32px;
     margin-top: 25px;
     color: white;
+    cursor: pointer;
     background-color: #174db7;
     border: none;
+}
+
+.button:hover {
+    color: #292929;
+    background-color: #9AC9F5ff;
+    transition: 500ms;
 }

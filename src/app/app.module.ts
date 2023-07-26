@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ViewportScroller } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Angular Materials
 import {MatIconModule} from '@angular/material/icon';
@@ -16,6 +18,12 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RestritoComponent } from './restrito/restrito.component';
+import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-produto.component';
+import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
+import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
+import { NavbarrestritoComponent } from './restrito/navbarrestrito/navbarrestrito.component';
+import { RestritoRoutingModule } from './restrito/restrito-routing.module';
 
 
 @NgModule({
@@ -26,7 +34,12 @@ import { HomeComponent } from './home/home.component';
     AboutusComponent,
     FooterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RestritoComponent,
+    AtualizaProdutoComponent,
+    CadastroProdutoComponent,
+    ListaProdutoComponent,
+    NavbarrestritoComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,11 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RestritoRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

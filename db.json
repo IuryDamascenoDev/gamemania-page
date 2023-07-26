@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Controle",
+      "descricao": "Controle PC/PS4",
+      "foto": "controller.jpeg",
+      "preco": "R$399.99"
+    },
+    {
+      "id": 2,
+      "produto": "Fortnite",
+      "descricao": "Fortnite Battle Royale PC",
+      "foto": "fortnite.jpeg",
+      "preco": "R$99.99"
+    },
+    {
+      "id": 3,
+      "produto": "Teclado",
+      "descricao": "Teclado mecânico",
+      "foto": "keyboard.jpg",
+      "preco": "R$199.99"
+    },
+    {
+      "id": 4,
+      "produto": "Mouse gamer",
+      "descricao": "Mouse gamer",
+      "foto": "mouse.jpg",
+      "preco": "R$159.99"
+    }
+  ]
+}
